@@ -12,8 +12,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   final introKey = GlobalKey<_WelcomeScreenState>();
   void _onIntroEnd(context) {
     //เมื่อทำการเรียกไปหน้าสุดท้าย
-    //ส่งไปหน้าdashboard
-    Navigator.pushReplacementNamed(context, '/dashboard');
+    //ส่งไปหน้าlogin
+    Navigator.pushReplacementNamed(context, '/login');
   }
 
   Widget _buildImage(String assetName) {
@@ -87,7 +87,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
       nextFlex: 0,
       skip: const Text('Skip'),
       next: const Icon(Icons.arrow_forward),
-      done: const Text('Done', style: TextStyle(fontWeight: FontWeight.w600)),
+      done: const Text('Start', style: TextStyle(fontWeight: FontWeight.w600)),
       dotsDecorator: const DotsDecorator(
         size: Size(10.0, 10.0),
         color: Color(0xFFBDBDBD),
